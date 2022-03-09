@@ -2,8 +2,9 @@
 
 module.exports = {
     elem: {
-        app_type: '//body/main[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/label[1]',
-        dependants_dropdown: '//body/main[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/select[1]',
+        app_type: '//label[contains(text(),"Single")]',
+        // for this below field, I am just highlighting the dependants and not selecting any from the dropdowns. We can select the dropdowns using various webdriverio methods
+        dependants_dropdown: '//div[contains(@class,'borrow__question__answer borrow__question__answer--select')]',
         property_home: '//ul[@class=\'borrow__question__answer clearfix\']/li/label[contains(text(),\'Home to live in\')]',
         annual_income_editbox: '//input[@aria-labelledby=\'q2q1\']',
         ann_other_income_editbox: '//input[@aria-labelledby=\'q2q2\']',
